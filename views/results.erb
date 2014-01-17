@@ -1,0 +1,11 @@
+<%# this is where I show the search results %>
+
+
+<% @movies["Search"].map do |movie| %>
+
+<li><a href=/movie/<%= movie["imdbID"]%> > 
+	<%= "#{movie["Title"]} #{movie["Year"]}" %> 
+	</a></li>
+
+<% end %>
+

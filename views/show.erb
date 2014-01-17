@@ -1,0 +1,14 @@
+<%# this is where I show more details of the specific movie %>
+<h1> Movie Information </h1>
+
+<li> Plot: <%= @imdb["Plot"] %> </li>
+<li> Pleased Year: <%= @imdb["Released"] %> </li>
+<li> Rated: <%= @imdb["Rated"] %> </li>
+<li> Runtime: <%= @imdb["Runtime"] %> </li>
+<li> Genre: <%= @imdb["Genre"] %> </li>
+<li> Director: <%= @imdb["Director"] %> </li>
+<li> Actors: <%= @imdb["Actors"] %> </li><br>
+
+<img src=<%= @imdb["Poster"] %>> <br>
+
+<a href='/'> new search </a>
