@@ -1,11 +1,73 @@
 /*stylesheets*/
 
-.container
-{
+body {
+	background-color: #c3f7f2 ;
+}
+
+
+.container {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 50px;
+
 	border: solid 1px black;
+}
+
+.search {
+	height: 300px;
+	width: 500px;
+	border: none;
+	margin-top: 150px;
+}
+
+.mushroom { float: left;
+
+}
+
+.mushroom > div  {
+
+	height: 15px; 
+	width: 15px; 
+	border: solid;
+	border-width: 0px;
+	border-color: none; /* you can write notes like this */
+	float: left;
+
+}
 
 
+/*
+body:hover .black {
+	background-color: #000080;
+}
+*/
+
+.mushroom div:hover {
+	background-color: yellow;
+
+}
+
+
+
+
+
+   
+
+
+
+
+
+.black  {
+	background-color: black;
+	height: 40px; 
+	width: 40px; 
+
+}
+
+.green  {
+	background-color: red;
+	height: 40px; 
+	width: 40px; 
+	
 }

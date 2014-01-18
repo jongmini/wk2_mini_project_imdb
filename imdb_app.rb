@@ -26,6 +26,7 @@ end
 
 # the CREATE METHOD/ROUTE for a Movie
 post '/results' do
+  
   search_str = params[:movie]
 
   @movies = imdb_pull(:s,search_str)
@@ -50,6 +51,8 @@ get '/movie/:id' do
   @imdb = imdb_pull(:i,imdb_id)
 # binding.pry
   erb :show
+
+  end
 
  #  @imdb = => {"Title"=>"Hit and Run",
  # "Year"=>"2012",
@@ -80,5 +83,5 @@ get '/movie/:id' do
 
   # html_str += '<br /><a href="/">New Search</a></body></html>'
 
-end
+
 

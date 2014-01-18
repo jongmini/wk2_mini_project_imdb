@@ -1,37 +1,282 @@
-<div class="container">
 
-	<h1>Find a Movie!</h1>
-	<form accept-charset="UTF-8" action="/results" method="post">
-    <label for="movie">Search for:</label>
-    <input id="movie" name="movie" type="text" /> 
-    <input name="commit" type="submit" value="Search" /> 
-  	</form>
+<div class="row"> 
+	
 
-
-
-
-	<!-- <form action="/animals" method="POST"> -->
-<!-- 
-		<input typ="text" name="animal[species]"> <br>
-		<textarea name="animal[description]"> </textarea>
-		<button> SUBMIT </button>
-
-	</form>
-<%#
-	<% @animals.each do |animal| %>
-	<div>
-	<p>
-	<%#	species: <%= animal[:species] %> <br>
-	<%#	description: <%= animal[:description] %> <br>
-	</p>
-
-
-
+	<div class="mushroom col-lg-6 col-md-3 left">
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div class="black"></div>   
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>  
+	  <div></div>
+	  <div></div>
+	  <div style="clear: both;"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>  
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>  
+	  <div></div>
+	  <div style="clear: both;"></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="green"></div>  
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>  
+	  <div></div>
+	  <div style="clear: both;"></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="green"></div> 
+	  <div class="green"></div>  
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div> 
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>  
+	  <div class="black"></div>
+	  <div></div>
+	  <div style="clear: both;"></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div class="green"></div>
+	  <div class="green"></div> 
+	  <div></div>
+	  <div></div>
+	  <div></div> 
+	  <div></div> 
+	  <div class="green"></div> 
+	  <div class="green"></div> 
+	  <div></div>
+	  <div></div>
+	  <div></div>  
+	  <div class="black"></div>
+	  <div></div>
+	  <div style="clear: both;" class="black"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div> 
+	  <div></div> 
+	  <div></div> 
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div> 
+	  <div class="green"></div>
+	  <div class="black"></div>
+	  <div style="clear: both;" class="black"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div> 
+	  <div></div> 
+	  <div></div> 
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="green"></div>
+	  <div class="black"></div>
+	  <div style="clear: both;" class="black"></div>
+	  <div></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div> 
+	  <div></div> 
+	  <div></div> 
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div> 
+	  <div></div> 
+	  <div class="black"></div>
+	  <div style="clear: both;" class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div> 
+	  <div></div> 
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div> 
+	  <div></div> 
+	  <div class="black"></div>
+	  <div style="clear: both;" class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div></div>
+	  <div></div> 
+	  <div class="green"></div>
+	  <div class="black"></div>
+	  <div style="clear: both;" class="black"></div>
+	  <div></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="green"></div>
+	  <div class="black"></div>
+	  <div style="clear: both;"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>   
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div style="clear: both;"></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>   
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div style="clear: both;"></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>   
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div style="clear: both;"></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>   
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>
+	  <div></div>
+	  <div style="clear: both;"></div>
+	  <div></div>
+	  <div></div> 
+	  <div></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div class="black"></div>
+	  <div></div>
+	  <div></div>   
+	  <div></div>
+	  <div></div>
 	</div>
-	<%# <% end %>
-	%>
- -->
 
+		
+	<div class="container search col-lg-6 col-md-9 right">
 
+		<h1 class="lead">Find a Movie!<small> Mario will get it for you! </small></h1>
+		<form accept-charset="UTF-8" action="/results" method="post">
+	    <label for="movie">Search for:</label>
+	    <input class="btn btn-default btn-lg" id="movie" name="movie" type="text" /> 
+	    <input class="btn btn-primary btn-lg" name="commit" type="submit" value="Search" /> 
+	  	</form>
+	</div>
 
 </div>
+
+
+
+
+
+
+

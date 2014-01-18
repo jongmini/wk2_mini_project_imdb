@@ -1,6 +1,11 @@
 <%# this is where I show more details of the specific movie %>
+
+<div class="container">
+
 <h1> Movie Information </h1>
 
+<li> Title: <a href=http://www.imdb.com//title/<%= @imdb["imdbID"] %>>
+	<%= @imdb["Title"] %> </a></li>
 <li> Plot: <%= @imdb["Plot"] %> </li>
 <li> Pleased Year: <%= @imdb["Released"] %> </li>
 <li> Rated: <%= @imdb["Rated"] %> </li>
@@ -9,6 +14,14 @@
 <li> Director: <%= @imdb["Director"] %> </li>
 <li> Actors: <%= @imdb["Actors"] %> </li><br>
 
-<img src=<%= @imdb["Poster"] %>> <br>
+<a href=http://www.imdb.com//title/<%= @imdb["imdbID"] %>>
+
+<img class="img-thumbnail" src=
+<%= (@imdb["Poster"]=="N/A" ? "http://memeshare.net/memes/12/11061.png" : @imdb["Poster"]) %>
+>
+
+</a> <br>
 
 <a href='/'> new search </a>
+
+</div>
