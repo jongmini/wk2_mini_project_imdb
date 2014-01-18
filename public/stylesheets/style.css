@@ -4,26 +4,50 @@ body {
 	background-color: #c3f7f2 ;
 }
 
+body  {
+	background-image: url(http://fc06.deviantart.net/fs71/f/2011/224/6/e/paper_mario_wallpaper_by_cmnixon-d46bi7i.png); 
+	backgound no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 12%;
+
+	}
+
+/*http://cdn.superbwallpapers.com/wallpapers/games/mario-21090-1920x1200.jpg*/
+/*body {
+	background-image:url(http://searchingforsuperwomen.com/wp-content/uploads/2013/09/SuperMarioBros.jpg);
+}*/
+
 
 .container {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
-
 	border: solid 1px black;
 }
+
+.show, .result {
+
+	background-color: rgba(236, 240, 241,0.9);
+
+}
+
+
 
 .search {
 	height: 300px;
 	width: 500px;
 	border: none;
-	margin-top: 150px;
+	margin-top: 30px;
 }
 
 .mushroom { float: left;
 
 }
+
 
 .mushroom > div  {
 

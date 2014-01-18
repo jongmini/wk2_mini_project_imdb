@@ -30,6 +30,7 @@ post '/results' do
   search_str = params[:movie]
 
   @movies = imdb_pull(:s,search_str)
+    # @movie = movie["Search"].sort_by{|movie| movie["Year"]}
 # binding.pry
   
   erb :results

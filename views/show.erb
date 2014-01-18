@@ -1,6 +1,6 @@
 <%# this is where I show more details of the specific movie %>
 
-<div class="container">
+<div class="container show">
 
 <h1> Movie Information </h1>
 
@@ -13,6 +13,7 @@
 <li> Genre: <%= @imdb["Genre"] %> </li>
 <li> Director: <%= @imdb["Director"] %> </li>
 <li> Actors: <%= @imdb["Actors"] %> </li><br>
+<li> Rating: <%= @imdb["imdbRating"] %> </li><br>
 
 <a href=http://www.imdb.com//title/<%= @imdb["imdbID"] %>>
 

@@ -1,16 +1,17 @@
 <%# this is where I show the search results %>
 
+<%# do I sort here?     # @movie = movie["Search"].sort_by{|movie| movie["Year"]} %>
 
 
-<div class="container">
+<div class="container result">
 <table class="table table-hover" border="1">
 <tr>
-<th>Movie results for <%= "#{@movie_title}" %> </th> 
+<th>Movie results for </th> 
 </tr>
 <% @movies["Search"].map do |movie| %>	
 <tr>
 <td><a class="text-center" href=/movie/<%= movie["imdbID"]%> > 
-	<%= "#{movie["Title"]} #{movie["Year"]}" %> 
+	<%= "#{movie["Title"]} (#{movie["Year"]})" %> 
 	</a>
 </td>
 </tr>
