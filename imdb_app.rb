@@ -4,13 +4,18 @@ require 'typhoeus'
 require 'json'
 require 'pry'
 
+
 get "/" do
+
 	redirect "/movie"
+  
 end
+
 
 
 # the INDEX METHOD/ROUTE for a Movie
 get "/movie" do
+
 
 	erb :index
 
@@ -26,12 +31,11 @@ end
 
 # the CREATE METHOD/ROUTE for a Movie
 post '/results' do
-  
-  search_str = params[:movie]
 
-  @movies = imdb_pull(:s,search_str)
-    # @movie = movie["Search"].sort_by{|movie| movie["Year"]}
+  search_str = params[:movie]
 # binding.pry
+  @movies = imdb_pull(:s,search_str)
+
   
   erb :results
   
