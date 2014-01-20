@@ -29,8 +29,8 @@ end
 # the CREATE METHOD/ROUTE for a Movie
 post '/results' do
 
-  search_str = params[:movie]
-  movies = imdb_pull(:s,search_str)
+  @search_str = params[:movie]
+  movies = imdb_pull(:s,@search_str)
 
   @movies =[]
 
