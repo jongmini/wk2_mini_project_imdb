@@ -5,31 +5,26 @@
 	<div class="row result">
 		<h2 id="show"> Movie Information </h2>
 		<div class="col-lg-6">
-				<dl class="dl-horizontal">
-					<dt>Title</dt><dd><a href=http://www.imdb.com//title/<%= @imdb["imdbID"] %>><%= @imdb["Title"] %></a></dd>
-					<dt>Plot</dt><dd><%= @imdb["Plot"] %></dd>
-					<dt>Released</dt><dd><%= @imdb["Released"] %></dd>
-					<dt>Rated</dt><dd><%= @imdb["Rated"] %></dd>
-					<dt>Runtime</dt><dd><%= @imdb["Runtime"] %></dd>
-					<dt>Genre</dt><dd><%= @imdb["Genre"] %></dd>
-					<dt>Director</dt><dd><%= @imdb["Director"] %></dd>
-					<dt>Actors</dt><dd><%= @imdb["Actors"] %></dd>
-					<dt>Rating</dt><dd><%= @imdb["imdbRating"] %>
-						<% (@imdb["imdbRating"].to_i.round).times do |x| %>
-						<img src=http://findicons.com/files/icons/2156/super_mario/128/star.png height="30px" width="30px">
-						<% end %></dd>
-
-				</dl>
-
-
+			<dl class="dl-horizontal">
+				<dt>Title</dt><dd><a href=http://www.imdb.com//title/<%= @imdb["imdbID"] %>><%= @imdb["Title"] %></a></dd>
+				<dt>Plot</dt><dd><%= @imdb["Plot"] %></dd>
+				<dt>Released</dt><dd><%= @imdb["Released"] %></dd>
+				<dt>Rated</dt><dd><%= @imdb["Rated"] %></dd>
+				<dt>Runtime</dt><dd><%= @imdb["Runtime"] %></dd>
+				<dt>Genre</dt><dd><%= @imdb["Genre"] %></dd>
+				<dt>Director</dt><dd><%= @imdb["Director"] %></dd>
+				<dt>Actors</dt><dd><%= @imdb["Actors"] %></dd>
+				<dt>Rating</dt><dd><%= @imdb["imdbRating"] %>
+					<% (@imdb["imdbRating"].to_i.round).times do |x| %>
+					<img src=http://findicons.com/files/icons/2156/super_mario/128/star.png height="30px" width="30px">
+					<% end %></dd>
+			</dl>
 		</div>		
 		<div class="col-lg-6 col-md-9 col-sm-9 col-xs-9">	
 			<a href=http://www.imdb.com/title/<%= @imdb["imdbID"] %>>
 			<img class="img img-responsive" src=
 			<%= (@imdb["Poster"]=="N/A" ? "http://memeshare.net/memes/12/11061.png" : @imdb["Poster"]) %>>
-			</a> <br>
-			
-			<a href='/'> new search </a>
+			</a> <br>	
 		</div>
 	</div>
 
